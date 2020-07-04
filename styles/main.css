@@ -187,7 +187,7 @@ body {
     width: 12em;
 }
 .cliente_logo{
-    position: absolute;
+    /* position: absolute; */
     top: 1em;
     right: 1em;
     width: 13em;
@@ -304,8 +304,8 @@ body {
         display: none;
     }
     .logo{
-        position: relative;
-        width: 12em;
+        position: absolute;
+        width: 10em;
     }
     header{
         text-align: center;
