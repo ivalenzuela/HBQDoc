@@ -1,0 +1,104 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/*
+Autor: Nathalie A. Ferreira G�mez
+Copyright 2012
+*/
+
+.grilla {
+ font-family: Microsoft Sans Serif, MS Sans Serif, MS Serif;
+ font-size: 11px;
+color: #000;   
+margin: 0px 0px 0px 0px;
+background-color:#fff;
+padding:5px 20px;
+margin:10px 0;
+border:1px solid #ccc;
+}
+		
+.tablaDespliegueDatos{
+        font-family     : Microsoft Sans Serif, MS Sans Serif, MS Serif;
+        font-size       : 11px;
+        color           : #000;   
+        border          : 0px;                                 
+        border-left     : 1px solid #D4D0C4;
+        margin          : 0px 0px 0px 0px;
+
+}
+
+.tabla_sim_title {
+/*  position: absolute;*/
+    background: threedface;
+	text-align:center;
+    overflow: hidden;
+    -moz-user-select: none;
+	border-right: 1px #939393 solid;;
+	border-bottom: 1px #939393 solid;
+	padding: 6px 0;
+	font-weight:bold;
+}
+
+.tabla_sim_head {
+/*  position: absolute;*/
+    background: threedface;
+    overflow: hidden;
+    -moz-user-select: none;
+	border-right: 1px #939393 solid;;
+	border-bottom: 1px #939393 solid;
+	padding: 4px;
+}
+
+.tabla_sim_body {
+	border-right: 1px #939393 solid;;
+	border-bottom: 1px #939393 solid;
+   /* border-color: threedhighlight threedface threedface threedhighlight;*/
+    background: window;
+    overflow: auto;
+	padding-left: 4px;
+	padding-right:4px;
+} 
+
+.tabla_sim_body hover {
+	border-right: 1px #939393 solid;;
+	border-bottom: 1px #939393 solid;
+   /* border-color: threedhighlight threedface threedface threedhighlight;*/
+    background-color:#E62925;
+   /* background: window;*/
+    overflow: auto;
+	padding-left: 4px;
+	padding-right:4px;
+} 
+
+.grilla_datos {
+border:1px solid #ccc;
+width:1185px;
+}
+
+ .RadGrid_Metro 
+            {
+               outline: none;
+            } 
+            
+   .RadGrid_Default
+            {
+               outline: none;
+            } 
+            
+ .sobretodo
+ {
+      position:relative; 
+      top:0; 
+      margin-right:auto;
+      margin-left:auto;
+      z-index:99999;
+      background-color: #FFFFFF; 
+ } 
+  .cajaTexto
+{
+    padding:5px 0px 0px 10px !important ;
+    border-radius: 5px !important ;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19) !important ;
+} 
+
