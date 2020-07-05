@@ -182,22 +182,22 @@
         //]]>
     </script>
         <!-- Header -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark ">
+    <ul class="navbar-nav bg-white sidebar">
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <img id="logoEmpresa" class="logo img-fluid" src="./images/hqbdoc_logo.png">
             </a>
 
             <!-- Nav Item - Alerts -->
             <li class="nav-item dropdown no-arrow mx-1 mr-2">
-                <a class="nav-link dropdown-toggle alert-btn" href="#" onclick="alertFunction()" role="button"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle alert-btn" href="#" onclick="alertFunction(1)" role="button"
+                   aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-bell fa-fw"></i>
                     <!-- Counter - Alerts -->
                     <span class="badge badge-danger badge-counter">3+</span>
                 </a>
                 <!-- Dropdown - Alerts -->
-                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in dropdown-content"
-                     id="myDropdown" aria-labelledby="alertsDropdown">
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                     id="notifications-dropdown" aria-labelledby="notifications-dropdown">
                     <h6 class="dropdown-header">
                         Alerts Center
                     </h6>
@@ -209,7 +209,7 @@
                         </div>
                         <div>
                             <div class="small text-gray-500">December 12, 2019</div>
-                            <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                            <div class="text-truncate">A new monthly report is ready to download!</div>
                         </div>
                     </a>
                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -220,7 +220,7 @@
                         </div>
                         <div>
                             <div class="small text-gray-500">December 7, 2019</div>
-                            $290.29 has been deposited into your account!
+                            <div class="text-truncate">$290.29 has been deposited into your account!</div>
                         </div>
                     </a>
                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -231,7 +231,7 @@
                         </div>
                         <div>
                             <div class="small text-gray-500">December 2, 2019</div>
-                            Spending Alert: We've noticed unusually high spending for your account.
+                            <div class="text-truncate">Spending Alert: We've noticed unusually high spending for your account.</div>
                         </div>
                     </a>
                     <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
@@ -240,7 +240,7 @@
 
             <!-- Nav Item - Messages -->
             <li class="nav-item dropdown no-arrow mx-1 mr-2">
-                <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle alert-btn" href="#" onclick="alertFunction(2)" role="button"
                    aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-envelope fa-fw"></i>
                     <!-- Counter - Messages -->
@@ -248,15 +248,11 @@
                 </a>
                 <!-- Dropdown - Messages -->
                 <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                     aria-labelledby="messagesDropdown">
+                     id="messages-dropdown" aria-labelledby="messages-dropdown">
                     <h6 class="dropdown-header">
                         Message Center
                     </h6>
                     <a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="dropdown-list-image mr-3">
-                            <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
-                            <div class="status-indicator bg-success"></div>
-                        </div>
                         <div class="font-weight-bold">
                             <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've
                                 been having.
@@ -265,10 +261,6 @@
                         </div>
                     </a>
                     <a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="dropdown-list-image mr-3">
-                            <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
-                            <div class="status-indicator"></div>
-                        </div>
                         <div>
                             <div class="text-truncate">I have the photos that you ordered last month, how would you like
                                 them sent to you?
@@ -277,10 +269,6 @@
                         </div>
                     </a>
                     <a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="dropdown-list-image mr-3">
-                            <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
-                            <div class="status-indicator bg-warning"></div>
-                        </div>
                         <div>
                             <div class="text-truncate">Last month's report looks great, I am very happy with the
                                 progress so far, keep up the good work!
@@ -289,10 +277,6 @@
                         </div>
                     </a>
                     <a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="dropdown-list-image mr-3">
-                            <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
-                            <div class="status-indicator bg-success"></div>
-                        </div>
                         <div>
                             <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that
                                 people say this to all dogs, even if they aren't good...
@@ -304,13 +288,12 @@
                 </div>
             </li>
             <li class="nav-item dropdown no-arrow mx-1 mr-2">
-                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"  onclick="alertFunction(3)">
                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
                     <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
                 </a>
                 <!-- Dropdown - User Information -->
-                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" id="user-dropdown" aria-labelledby="user-dropdown">
                     <a class="dropdown-item" href="#">
                         <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                         Profile
@@ -562,8 +545,17 @@
                     Sys.Application.add_load(verQR);
                 }
 
-                function alertFunction () {
-                    document.getElementById("myDropdown").classList.toggle("show");
+                function alertFunction (id) {
+                    if (id === 1) {
+                        document.getElementById("notifications-dropdown").classList.toggle("show");
+                    }
+                    if (id === 2) {
+                        document.getElementById("messages-dropdown").classList.toggle("show");
+                    }
+                    if (id === 3) {
+                        document.getElementById("user-dropdown").classList.toggle("show");
+                    }
+
                 }
 
                 // Close the dropdown if the user clicks outside of it

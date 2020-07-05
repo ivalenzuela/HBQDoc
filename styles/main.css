@@ -351,3 +351,25 @@ body {
 		font-size: 11px;
 	}
 }
+
+.navbar-nav .dropdown-menu {
+	position: fixed !important;
+	width: 100% !important;
+	height: 200px !important;
+	top: 50px !important;
+}
+@media (min-width: 380px) {
+	.navbar-nav .dropdown-menu {
+		position: fixed !important;
+		width: 380px !important;
+		height: 200px !important;
+		top: 50px !important;
+		right: 100px;
+	}
+}
+.dropdown-item > div {
+	width: 100%;
+}
+.dropdown-item {
+	background-color: white;
+}
