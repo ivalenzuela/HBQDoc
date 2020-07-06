@@ -357,6 +357,7 @@ body {
 	width: 100% !important;
 	height: 200px !important;
 	top: 50px !important;
+	font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 @media (min-width: 380px) {
 	.navbar-nav .dropdown-menu {
@@ -372,4 +373,21 @@ body {
 }
 .nav-item > a {
 	color: #d1d3e2 !important;
+}
+
+.nav-item > a:hover {
+	color: #b7b9cc !important;
+}
+.navbar-nav  .dropdown-list .dropdown-header {
+	background-color: #4e73df;
+	border: 1px solid #4e73df;
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	color: #fff;
+}
+.dropdown-menu {
+	padding: 0;
+}
+.text-gray-600 {
+	color: #858796 !important;
 }
