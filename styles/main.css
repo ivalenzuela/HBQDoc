@@ -355,7 +355,7 @@ body {
 .navbar-nav .dropdown-menu {
 	position: fixed !important;
 	width: 100% !important;
-	height: 200px !important;
+	height: auto;
 	top: 50px !important;
 	font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
@@ -363,7 +363,7 @@ body {
 	.navbar-nav .dropdown-menu {
 		position: fixed !important;
 		width: 380px !important;
-		height: 200px !important;
+		height: auto;
 		top: 50px !important;
 		right: 100px;
 	}
@@ -390,4 +390,7 @@ body {
 }
 .text-gray-600 {
 	color: #858796 !important;
+}
+.shadow {
+	box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
 }
