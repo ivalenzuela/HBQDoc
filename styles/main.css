@@ -367,9 +367,6 @@ body {
 		right: 100px;
 	}
 }
-.dropdown-item > div {
-	width: 100%;
-}
 .dropdown-item {
 	background-color: white;
 }
